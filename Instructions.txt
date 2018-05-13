@@ -1,0 +1,20 @@
+
+Make a folder/Class Library Interfaces
+Make a folder/Class library Repositories
+Make a class studentRepository which contains all the CRUD methods for student
+make a model student
+Make an interface IStudentReposioty based on student repository in Interfaces Folder
+Inherit studentRepository from IStudentRepository interface in repositories folder
+Make a controller for student 
+Make a private variable IStudentrepository
+Make constructor which takes studentsrepository as an argument
+Set private variable equal to constructor passed variable
+At this point if you run it will give error No parameterless constructor defined for this object.
+Install Unity.mvc5 by Paul hiles
+Add this line UnityConfig.RegisterComponents(); to the global.asax file
+If you run at this point the error will be removed
+Change the type of constructor passed variable to IStudent Repository
+If you run at this point you will see error The current type IStudentRepository, is an interface and cannot be constructed
+Make a configure.container section in unityconfig in appstart folder and give it interface iStudentRepository and StudentRepository
+Run and Build it should be complete
+

@@ -25,6 +25,8 @@ namespace Dependency_Injection_using_Unity.Models
         {
         }
 
+        public virtual DbSet<Student> Students { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
